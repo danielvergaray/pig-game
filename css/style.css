@@ -23,7 +23,8 @@
         font-size: 6rem; }
         .areaTotal .game-container .player-container .player-highscore p {
           margin: 0;
-          padding-bottom: 150px; }
+          padding-bottom: 150px;
+          color: red; }
       .areaTotal .game-container .player-container .player-currentScore_container {
         border: 1px solid #c7365f;
         width: fit-content;
