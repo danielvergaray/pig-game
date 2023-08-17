@@ -14,7 +14,7 @@
     /* height: 40rem; */
     background-color: rgba(255, 255, 255, 0.4); }
     .areaTotal .game-container .player-container {
-      padding: 70px 100px; }
+      padding: 90px 100px; }
       .areaTotal .game-container .player-container .player-titulo {
         text-align: center;
         font-size: 30px; }
@@ -42,8 +42,39 @@
         .areaTotal .game-container .player-container .player-currentScore_container p {
           text-align: center;
           padding-top: 10px;
-          font-size: 1.5rem;
+          font-size: 2rem;
           font-weight: bolder; }
+    .areaTotal .game-container .player-container-current {
+      background-color: rgba(255, 255, 255, 0.4); }
+    .areaTotal .game-container .botones-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: fit-content;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 40px; }
+      .areaTotal .game-container .botones-container .botones-juego {
+        border: 0px solid black;
+        border-radius: 80rem;
+        width: fit-content;
+        padding: 15px;
+        display: flex;
+        background-color: whitesmoke;
+        cursor: pointer; }
+        .areaTotal .game-container .botones-container .botones-juego p {
+          padding-left: 10px; }
+      .areaTotal .game-container .botones-container .rollDice-btn {
+        margin: 320px auto 25px; }
+      .areaTotal .game-container .botones-container .hold-btn {
+        margin: auto; }
+      .areaTotal .game-container .botones-container .dado {
+        position: absolute;
+        transform: translateY(-50%);
+        transform: translateX(20%);
+        top: 30%; }
+        .areaTotal .game-container .botones-container .dado img {
+          width: 7rem; }
 
 * {
   padding: 0;

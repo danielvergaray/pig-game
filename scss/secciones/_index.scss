@@ -1,15 +1,14 @@
+.areaTotal {
 
-.areaTotal{
-    
     height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
     background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
-    
-    
 
-    .game-container{
+
+
+    .game-container {
         border: 1px solid black;
         border-radius: 0.5rem;
         margin: auto;
@@ -18,28 +17,29 @@
         width: 60rem;
         /* height: 40rem; */
         background-color: rgba(255, 255, 255, 0.4);
-        
-    
-        .player-container{
-            padding: 70px 100px;
 
-            .player-titulo{
+
+        .player-container {
+            padding: 90px 100px;
+
+            .player-titulo {
                 text-align: center;
                 font-size: 30px;
             }
-            .player-highscore{
+
+            .player-highscore {
                 text-align: center;
                 font-size: 6rem;
-                
 
-                p{
+
+                p {
                     margin: 0;
                     padding-bottom: 150px;
                     color: red;
                 }
             }
 
-            .player-currentScore_container{
+            .player-currentScore_container {
                 border: 1px solid #c7365f;
                 width: fit-content;
                 /* height: 5rem; */
@@ -49,19 +49,71 @@
                 background-color: #c7365f;
                 border-radius: 0.5rem;
                 color: white;
-                h3{
+
+                h3 {
                     text-align: center;
                     font-size: 1.25rem;
                     font-weight: 100;
                 }
-                p{
+
+                p {
                     text-align: center;
                     padding-top: 10px;
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     font-weight: bolder;
                 }
             }
-            
+
+        }
+        .player-container-current{
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .botones-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: fit-content;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 40px;
+        
+
+            .botones-juego {
+                border: 0px solid black;
+                border-radius: 80rem;
+                width: fit-content;
+                padding: 15px;
+                display: flex;
+                background-color: whitesmoke;
+                cursor: pointer;
+
+                p{
+                    padding-left: 10px;
+                }
+
+            }
+            .rollDice-btn{
+                margin: 320px auto 25px;
+                
+                
+                
+            }
+            .hold-btn {
+                margin: auto;
+                
+            }
+            .dado{
+                position: absolute;
+                transform: translateY(-50%);
+                transform: translateX(20%);
+                top: 30%;
+                
+                img{
+
+                    width: 7rem;
+                }
+            }
         }
     }
 }
