@@ -46,6 +46,8 @@
           font-weight: bolder; }
     .areaTotal .game-container .player-container-current {
       background-color: rgba(255, 255, 255, 0.4); }
+    .areaTotal .game-container .player-ganador {
+      background-color: #2f2f2f; }
     .areaTotal .game-container .botones-container {
       position: absolute;
       left: 50%;
@@ -68,6 +70,8 @@
         margin: 320px auto 25px; }
       .areaTotal .game-container .botones-container .hold-btn {
         margin: auto; }
+      .areaTotal .game-container .botones-container .oculto {
+        display: none; }
       .areaTotal .game-container .botones-container .dado {
         position: absolute;
         transform: translateY(-50%);
@@ -75,6 +79,16 @@
         top: 30%; }
         .areaTotal .game-container .botones-container .dado img {
           width: 7rem; }
+    .areaTotal .game-container .btn {
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 400;
+      transition: all 0.2s; }
+      .areaTotal .game-container .btn :focus {
+        outline: none; }
+      .areaTotal .game-container .btn :active {
+        transform: translate(0, 10%);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
 
 * {
   padding: 0;
