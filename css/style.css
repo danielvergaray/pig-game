@@ -13,12 +13,13 @@
     grid-template-columns: 50% 50%;
     width: 60rem;
     /* height: 40rem; */
-    background-color: rgba(255, 255, 255, 0.4); }
+    background-color: rgba(102, 89, 160, 0.4); }
     .areaTotal .game-container .player-container {
       padding: 50px 100px; }
       .areaTotal .game-container .player-container .player-titulo {
         text-align: center;
-        font-size: 30px; }
+        font-size: 30px;
+        color: white; }
       .areaTotal .game-container .player-container .player-highscore {
         text-align: center;
         font-size: 6rem; }
@@ -64,8 +65,11 @@
           transform: translate(0, 10%); }
         .areaTotal .game-container .player-container .reglas-container img {
           width: 100px; }
+        .areaTotal .game-container .player-container .reglas-container p {
+          color: white;
+          padding-bottom: 10px; }
     .areaTotal .game-container .player-container-current {
-      background-color: rgba(255, 255, 255, 0.4); }
+      background-color: rgba(24, 34, 51, 0.87); }
     .areaTotal .game-container .player-ganador {
       background-color: #2f2f2f; }
     .areaTotal .game-container .botones-container {

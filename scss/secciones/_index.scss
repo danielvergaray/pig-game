@@ -17,7 +17,8 @@
         grid-template-columns: 50% 50%;
         width: 60rem;
         /* height: 40rem; */
-        background-color: rgba(255, 255, 255, 0.4);
+        //background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(102, 89, 160, 0.4);
 
 
         .player-container {
@@ -26,6 +27,7 @@
             .player-titulo {
                 text-align: center;
                 font-size: 30px;
+                color: white;
             }
 
             .player-highscore {
@@ -49,6 +51,7 @@
                 /* padding-top: 150px; */
                 padding: 30px 50px;
                 background-color: #c7365f;
+                //background-color: #5536c7;
                 border-radius: 0.5rem;
                 color: white;
 
@@ -93,6 +96,10 @@
                     width: 100px;
 
                 }
+                p{
+                    color: white;
+                    padding-bottom: 10px;
+                }
 
 
 
@@ -101,7 +108,7 @@
         }
 
         .player-container-current {
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(24, 34, 51, 0.87);
         }
 
         .player-ganador {

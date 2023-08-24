@@ -74,7 +74,7 @@ function hold() {
 
         document.getElementById(`highScoreHtml--${activePlayer}`).textContent = scores[activePlayer];
 
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= 50) {
             playing = false;
             document.getElementById(`playerContainer--${activePlayer}`).classList.add("player-ganador");
             document.getElementById(`playerContainer--${activePlayer}`).classList.remove("player-container-current");
