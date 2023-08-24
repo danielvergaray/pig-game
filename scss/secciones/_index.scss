@@ -1,8 +1,9 @@
 .areaTotal {
 
-    height: 100vh;
+    height: fit-content;
     margin: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
 
@@ -20,7 +21,7 @@
 
 
         .player-container {
-            padding: 90px 100px;
+            padding: 50px 100px;
 
             .player-titulo {
                 text-align: center;
@@ -34,7 +35,8 @@
 
                 p {
                     margin: 0;
-                    padding-bottom: 150px;
+                    padding-bottom: 100px;
+                    padding-top: 20px;
                     color: red;
                 }
             }
@@ -62,6 +64,36 @@
                     font-size: 2rem;
                     font-weight: bolder;
                 }
+            }
+            .reglas-container{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                left: 80%;
+                width: fit-content;
+                padding-top: 30px;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.2s;
+
+                :hover{
+                    scale: 1.2;
+                  }
+
+                :focus{
+                    outline: none; 
+                }
+                :active {
+                    transform: translate(0, 10%);
+                  }
+                  
+                img{
+                    width: 100px;
+                    
+                }
+                
+                
+                
             }
 
         }
@@ -144,4 +176,5 @@
               }
         }
     }
+    
 }
