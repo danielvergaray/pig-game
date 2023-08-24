@@ -9,15 +9,16 @@ let player1Container = document.getElementById("playerContainer--0");
 let player2Container = document.getElementById("playerContainer--1");
 let btnHold = document.getElementById("holdHtml");
 let btnNewGame = document.getElementById("newBtnHtml");
+let containerReglas = document.getElementById("reglasContainer");
 let scores, currentScore, activePlayer, playing;
 
-iniciarJuego(player1Container, player2Container, score0, score1, highScore0, highScore1);
+iniciarJuego(player1Container, player2Container, score0, score1, highScore0, highScore1, containerReglas);
 
-btnNewGame.addEventListener("click", ()=>iniciarJuego (player1Container, player2Container, score0, score1, highScore0, highScore1));
+btnNewGame.addEventListener("click", () => iniciarJuego(player1Container, player2Container, score0, score1, highScore0, highScore1, containerReglas));
 
-function iniciarJuego(player1Container, player2Container, score0, score1, highScore0, highScore1) {
+function iniciarJuego(player1Container, player2Container, score0, score1, highScore0, highScore1, containerReglas) {
 
-    
+    containerReglas.classList.add("oculto");
 
     //Valores iniciales
     score0.textContent = 0;
@@ -65,7 +66,7 @@ function lanzarDado() {
             cambiarJugador()
         }
     }
-};
+}
 
 function hold() {
     if (playing) {
@@ -77,9 +78,11 @@ function hold() {
             playing = false;
             document.getElementById(`playerContainer--${activePlayer}`).classList.add("player-ganador");
             document.getElementById(`playerContainer--${activePlayer}`).classList.remove("player-container-current");
-            dadoFisicoContainer.classList.add("oculto")
+            dadoFisicoContainer.classList.add("oculto");
+
+            notificacionGanador(activePlayer)
         } else {
-            cambiarJugador()
+            cambiarJugador();
         }
     }
 
@@ -97,7 +100,48 @@ function cambiarJugador() {
     player1Container.classList.toggle("player-container-current");
     player2Container.classList.toggle("player-container-current");
 }
-// SI el numero del dado es igual a 1, el jugador pierde puntos y el turno pasa al otro
+
+let xCerar = document.getElementById("XParaCerrarId");
+xCerar.addEventListener("click", () => mostrarOcultar(containerReglas));
+
+let daRules = document.getElementById("iconoReglas");
+daRules.addEventListener("click", () => mostrarOcultar(containerReglas));
+
+
+
+
+function mostrarOcultar(containerReglas) {
+    containerReglas.classList.toggle("oculto");
+    let areaTotalContainer = document.getElementById("areaTotalId");
+    areaTotalContainer.classList.toggle("cortina");
+
+}
+
+
+function notificacionGanador(activePlayer) {
+    console.log(activePlayer)
+    if (activePlayer === 0) {
+        Swal.fire({
+            position: 'top-center',
+            imageUrl: './imagenes/homeroCorona.jpg',
+            imageHeight: 500,
+            title: `Jugador 1 es el GANADOR`,
+            showConfirmButton: false,
+            timer: 5000
+        })
+    } else {
+        Swal.fire({
+            position: 'top-center',
+            imageUrl: './imagenes/homeroCorona.jpg',
+            imageHeight: 500,
+            title: `Jugador 2 es el GANADOR`,
+            showConfirmButton: false,
+            timer: 5000
+        })
+    }
+
+
+}
 
 
 

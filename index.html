@@ -4,12 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/15199fa674.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Pig Game</title>
 </head>
 
 <body>
-    <main class="areaTotal">
+    <section id="reglasContainer" class="oculto reglas-container-class">
+        <i class="fa-regular fa-circle-xmark X" id="XParaCerrarId"></i>
+        <h2>REGLAS DEL JUEGO</h2>
+        <p><i class="fa-regular fa-hand-point-right"></i>Toca en Roll Dice para empezar el juego</p>
+        <p><i class="fa-regular fa-hand-point-right"></i>En Current se almacenan los puntos de cada lanzada de dado</p>
+        <p><i class="fa-regular fa-hand-point-right"></i>Debajo del nombre del jugador se guarda el acumulado de puntos</p>
+        <p><i class="fa-regular fa-hand-point-right"></i>Para acumular puntos debes tocar en Hold para que se te acumulen los puntos</p>
+        <p><i class="fa-regular fa-hand-point-right"></i>Gana quien llega primero a 50 puntos</p>
+        <p><i class="fa-regular fa-hand-point-right"></i>Si te toca el numero 1 en el dado, pierdes el turno y lo acumulado en current</p>
+        <p><i class="fa-regular fa-hand-point-right"></i>Si quieres matener el puntaje acumulado en current, oprime Hold</p>
+    </section>
+    <main class="areaTotal" id="areaTotalId">
         <section class="game-container">
             <div class="player-container-current player-container" id="playerContainer--0">
                 <div class="player-titulo">
@@ -34,7 +46,7 @@
                     <h3>CURRENT</h3>
                     <p id="currentScoreHtml--1">0</p>
                 </div>
-                <section class="reglas-container">
+                <section class="reglas-container" id="iconoReglas">
                     <p>REGLAS</p>
                     <img src="./imagenes/Da_Rules.png" alt="">
                 </section>
@@ -61,13 +73,7 @@
     </main>
 
 
-
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 
